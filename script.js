@@ -2,7 +2,7 @@
 // CONFIGURAÇÃO
 // ========================================
 
-const API_URL = "http://localhost:3000/chat";
+const API_URL = "https://gamezone-ai.onrender.com/chat";
 
 
 // ========================================
@@ -414,11 +414,10 @@ function getFriendlyError(error) {
         )
     ) {
 
-        return (
-            "Não consegui conectar ao servidor. " +
-            "Verifique se o Node.js está rodando " +
-            "em http://localhost:3000."
-        );
+return (
+    "Não consegui conectar ao servidor. " +
+    "Verifique se a API da GameZone AI está online."
+);
     }
 
     return (
