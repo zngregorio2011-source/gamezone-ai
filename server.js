@@ -26,7 +26,12 @@ const openai = new OpenAI({
     baseURL: BASE_URL
 });
 
-app.use(cors());
+app.use(cors({
+    origin: true,
+    methods: ["GET", "POST", "OPTIONS"],
+    allowedHeaders: ["Content-Type"]
+}));
+
 app.use(express.json());
 
 /*
